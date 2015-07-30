@@ -66,6 +66,9 @@ app.locals.host = HOST;
 // App
 app.use("/", routeApp);
 
+// Static doc
+app.use("/doc/js", express.static(path.join(__dirname, "../doc-js/_book")));
+
 // REST API
 app.use("/api", routeApi);
 

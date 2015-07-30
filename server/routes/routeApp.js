@@ -46,8 +46,4 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/doc", (req, res) => {
-  res.json({});
-});
-
 export default router;
