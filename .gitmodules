@@ -1,0 +1,3 @@
+[submodule "doc-js"]
+	path = doc-js
+	url = git@github.com:yidea/doc-js.git
