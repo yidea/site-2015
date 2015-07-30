@@ -1,0 +1,19 @@
+\.git
+\.hg
+
+\.DS_Store
+\.project
+bower_components
+node_modules
+npm-debug\.log
+
+# Config
+config
+
+# Build
+dist
+coverage
+Procfile
+
+# Dev
+.idea
