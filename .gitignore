@@ -8,7 +8,7 @@ node_modules
 npm-debug\.log
 
 # Config
-config
+# config
 
 # Build
 dist
