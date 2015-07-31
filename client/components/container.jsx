@@ -4,7 +4,6 @@
 import React from "react";
 import Router, {RouteHandler} from "react-router";
 import AltContainer from "alt/AltContainer";
-import {Body, Heading} from "@walmart/wmreact-base";
 import Configs from "config/configs";
 
 export default React.createClass({
@@ -70,19 +69,12 @@ export default React.createClass({
     }
 
     return (
-      <Body
-        headerHref={headerHref}
-        title="New Item Setup"
-        navText={navText}
-        navTarget={navTarget}
-        showFooter={false}>
-        <div className="item-setup ResponsiveContainer">
-          <Heading.H1 className="no-margin">{title}</Heading.H1>
-          <div className="item-setup-body">
-            {this._wrapAlt(<RouteHandler/>)}
-          </div>
+      <div className="item-setup ResponsiveContainer">
+        <h1>{title}</h1>
+        <div className="item-setup-body">
+          {this._wrapAlt(<RouteHandler/>)}
         </div>
-      </Body>
+      </div>
     );
   }
 });

@@ -26,8 +26,7 @@ let app = module.exports = express(),
 app.engine("hbs", exphbs({extname: ".hbs"}));
 app.set("views", path.join(__dirname, "./views"));
 app.use("/js", express.static(path.join(__dirname, "../dist/js")));
-app.use(express.static(path.join(__dirname, "../..", "public")));
-// app.use(express.static(__dirname + "/dist", { maxage: "720h" })); // set Etag, maxage
+app.use(express.static(path.join(__dirname, "../..", "public"), { maxage: "24h"})); // set Etag, maxage
 // X-Powered-By header has no functional value.
 // Keeping it makes it easier for an attacker to build the site"s profile
 app.disable("x-powered-by");
