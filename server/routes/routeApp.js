@@ -2,6 +2,7 @@
  * routeApp
  */
 import express from "express";
+import path from "path";
 import Configs from "../../config/configs";
 
 let router = express.Router(),
