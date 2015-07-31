@@ -19,7 +19,7 @@ router.get("/", (req, res) => {
     // bundleJs = `http://127.0.0.1:${WEBPACK_DEV_PORT}/js/bundle.js`;
     // bundleCss = `http://127.0.0.1:${WEBPACK_DEV_PORT}/js/style.css`;
   } else { // PROD
-    let stats = require("../dist/server/stats.json");
+    let stats = require("../../dist/server/stats.json");
     bundleJs = path.join("/js", stats.assetsByChunkName.main[0]);
     bundleCss = path.join("/js", stats.assetsByChunkName.main[1]);
   }

@@ -27,7 +27,7 @@ Testing http://localhost:3000
 $ npm install --production
 $ npm run build
 $ npm install pm2 -g
-$ NODE_ENV=production pm2 start server/index.js
+$ NODE_ENV=production pm2 start server/index.js --name yidea
 ```
 
 ### TODO
