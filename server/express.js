@@ -2,11 +2,9 @@
  * Express
  */
 import express from "express";
-import session from "express-session";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import path from "path";
-import flash from "express-flash";
 import morgan from "morgan";
 import methodOverride from "method-override";
 import compression from "compression";
@@ -40,20 +38,6 @@ if (WEBPACK_DEV) {
 // Cookie parser should be above session
 // cookieParser - Parse Cookie header and populate req.cookies with an object keyed by cookie names
 app.use(cookieParser());
-// Create a session middleware with the given options, set store strategy
-app.use(session({
-  resave: true,
-  saveUninitialized: true,
-  // Use generic cookie name for security purposes
-  key: "sessionId",
-  secret: Configs.sessionSecret,
-  // Add HTTPOnly, Secure attributes on Session Cookie
-  cookie: {
-    httpOnly: true,
-    secure: true
-  }
-}));
-app.use(flash()); // use flash
 app.use(compression()); // gzip response
 
 // init global variables
