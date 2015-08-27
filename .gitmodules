@@ -1,3 +1,6 @@
 [submodule "doc-js"]
 	path = doc-js
 	url = git@github.com:yidea/doc-js.git
+[submodule "book-nodejs"]
+	path = book-nodejs
+	url = git@github.com:yidea/book-nodejs.git

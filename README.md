@@ -14,6 +14,7 @@ A boilerplate for basic APP + API node.js server
 ### Development
 
 ```
+$ git submodule add git@github.com:user 
 $ git submodule update --init
 $ npm install
 $ npm run hot or npm run dev

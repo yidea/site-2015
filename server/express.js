@@ -51,6 +51,7 @@ app.use("/", routeApp);
 
 // Static doc
 app.use("/doc/js", express.static(path.join(__dirname, "../doc-js/_book")));
+app.use("/doc/nodejs", express.static(path.join(__dirname, "../book-nodejs/_book")));
 
 // REST API
 app.use("/api", routeApi);
