@@ -9,7 +9,7 @@ export default React.createClass({
 
   render() {
     return (
-      <div>App</div>
+      <div>App test</div>
     );
   }
 });
